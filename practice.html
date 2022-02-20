@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+    <style>
+        .details{
+            font-size: 25px;
+            display: grid;
+            gap: 1rem;
+            font-family: "Oswald", sans-serif;
+            justify-content: center;
+            margin-top: 2rem;
+            border: 5px solid black;
+            border-radius: 100px;
+        }
+
+        .container{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 0;
+            margin-top: 2rem;
+            /* border: 2px solid black; */
+            height: 65vh;
+        }
+        .border{
+            list-style: none;
+            grid-template-columns: repeat(4, 5.75em);
+            display: grid;
+            gap: 1.25rem;
+            padding: 1rem;
+            margin: 0;
+            border-radius: 0.5rem;
+        }
+        .cell
+        {
+            margin: auto;
+            background-color: rgb(219, 219, 219);
+            width: 6em;
+            height: 6em;
+            display: block;
+            /* border: 2px solid black; */
+        }
+    </style>
+    <script src="event.js" defer></script>
+</head>
+<body>
+    <div class="details">
+        <span class="text">
+            Mouse Pointer: <span class="pointers">0</span>
+        </span>
+        <span class="text">
+            Pointing to cell: <span class="pointtocell">0</span>
+        </span>
+        <span class="text">
+            Cell color: <span class="cellcolor">0</span>
+        </span>
+    </div>
+    <div class="container">
+        <ul class="border">
+            <li class="cell cell1"></li>
+            <li class="cell cell2"></li>
+            <li class="cell cell3"></li>
+            <li class="cell cell4"></li>
+            <li class="cell cell5"></li>
+            <li class="cell cell6"></li>
+            <li class="cell cell7"></li>
+            <li class="cell cell8"></li>
+            <li class="cell cell9"></li>
+            <li class="cell cell10"></li>
+            <li class="cell cell11"></li>
+            <li class="cell cell12"></li>
+            <li class="cell cell13"></li>
+            <li class="cell cell14"></li> 
+            <li class="cell cell15"></li>
+            <li class="cell cell16"></li>
+        </ul>
+    </div>
+</body>
+</html>

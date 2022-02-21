@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grids</title>
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
         .details{
-            font-size: 25px;
+            font-size: 23px;
             display: grid;
             gap: 1rem;
-            font-family: "Oswald", sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             justify-content: center;
             margin-top: 2rem;
             border: 5px solid black;
             border-radius: 100px;
         }
-
+        p{
+            text-align: center;
+            font-size: 1.3rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
         .container{
             justify-content: center;
             align-items: center;
@@ -25,6 +34,7 @@
             margin-top: 2rem;
             /* border: 2px solid black; */
             height: 65vh;
+
         }
         .border{
             list-style: none;
@@ -44,6 +54,21 @@
             display: block;
             /* border: 2px solid black; */
         }
+        footer{
+    margin: 0;
+    padding: 0;
+  }
+  .footer{
+    margin-top: 3rem;
+    height: 4em;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+
     </style>
     <script src="event.js" defer></script>
 </head>
@@ -59,25 +84,33 @@
             Cell color: <span class="cellcolor">0</span>
         </span>
     </div>
-    <div class="container">
-        <ul class="border">
-            <li class="cell cell1"></li>
-            <li class="cell cell2"></li>
-            <li class="cell cell3"></li>
-            <li class="cell cell4"></li>
-            <li class="cell cell5"></li>
-            <li class="cell cell6"></li>
-            <li class="cell cell7"></li>
-            <li class="cell cell8"></li>
-            <li class="cell cell9"></li>
-            <li class="cell cell10"></li>
-            <li class="cell cell11"></li>
-            <li class="cell cell12"></li>
-            <li class="cell cell13"></li>
-            <li class="cell cell14"></li> 
-            <li class="cell cell15"></li>
-            <li class="cell cell16"></li>
-        </ul>
-    </div>
+
+    <p>Press D to enter Dark mode</p>
+
+        <div class="container">
+            <ul class="border">
+                <li class="cell cell1"></li>
+                <li class="cell cell2"></li>
+                <li class="cell cell3"></li>
+                <li class="cell cell4"></li>
+                <li class="cell cell5"></li>
+                <li class="cell cell6"></li>
+                <li class="cell cell7"></li>
+                <li class="cell cell8"></li>
+                <li class="cell cell9"></li>
+                <li class="cell cell10"></li>
+                <li class="cell cell11"></li>
+                <li class="cell cell12"></li>
+                <li class="cell cell13"></li>
+                <li class="cell cell14"></li> 
+                <li class="cell cell15"></li>
+                <li class="cell cell16"></li>
+            </ul>
+        </div>
+
+    <footer>
+        <code class="footer">Event listeners practice &copy-(02-17-2022)</code>
+    </footer>
+
 </body>
 </html>

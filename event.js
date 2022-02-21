@@ -3,6 +3,9 @@ const border = document.querySelector('.border')
 const pointer = document.querySelector('.pointers')
 const tocell = document.querySelector('.pointtocell')
 const cellcolor = document.querySelector('.cellcolor')
+const body = document.body
+const details = document.querySelector('.details')
+const darkMode = document.querySelector('p')
 
 border.addEventListener('mouseenter', (e)=>{
     border.style.outline = "5px solid rgb(2, 187, 243)"
@@ -46,3 +49,18 @@ cells.forEach((cell) => {
         }
     })
 })
+
+body.addEventListener("keydown", (event) => {
+    // event.code holds the current key pressed:
+    console.log(event.code);
+  
+    // Test for KeyD (the "d" key)
+    if (event.code === "KeyD") {
+      body.style.backgroundColor === ""
+        ? (body.style.backgroundColor = "hsl(201, 34%, 13%)")
+        : (body.style.backgroundColor = "");
+        details.style.border === "" ? (details.style.border = "5px solid white") : (details.style.border = "")
+        details.style.color === "" ? (details.style.color = "white") : (details.style.color = "")
+        darkMode.style.color === "" ? (darkMode.style.color = "white") : (darkMode.style.color = "")
+    }
+  });
